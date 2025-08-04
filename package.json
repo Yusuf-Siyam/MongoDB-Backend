@@ -3,13 +3,27 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon \"mongo Learning/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yusuf-Siyam/MongoDB-Backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yusuf-Siyam/MongoDB-Backend/issues"
+  },
+  "homepage": "https://github.com/Yusuf-Siyam/MongoDB-Backend#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0",
+    "mongose": "^0.0.2-security"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
