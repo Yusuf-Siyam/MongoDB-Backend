@@ -4,6 +4,21 @@ const mongoose = require('mongoose');
 const app = express();
 const port = 3002;
 
+//create schema
+const productSchema=new mongoose.Schema({
+  tittle:String,
+  price:Number,
+  description:String,
+ createdAt: {
+  type: Date,
+  default: Date.now
+}
+
+});
+//create model
+const product=mongoose.model("Products",productSchema)
+
+
 // mongoose
 // .connect('mongodb://127.0.0.1:27017/testProductBd')
 //   .then(() => console.log('Connected!'));
